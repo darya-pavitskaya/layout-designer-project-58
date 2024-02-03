@@ -81,6 +81,7 @@ main {
 }
 
 .title {
+  /* color: var(--white); */
   font-family: "Neucha", Arial, Helvetica, sans-serif;
   line-height: 1.2em;
 }
@@ -88,6 +89,7 @@ main {
 .title-main {
   position: relative;
   z-index: 1;
+  /* color: var(--dark); */
   font-weight: 400;
   font-size: 72px;
   padding-bottom: 198px;
@@ -166,7 +168,6 @@ main {
 
 .descripion-subtext {
   font-size: 16px;
-  /* padding-bottom: 508px; */
 }
 
 .descripion-video {
@@ -177,5 +178,46 @@ main {
 }
 
 .navigation {
+  padding-top: 200px;
   background-color: var(--dark);
+}
+
+.navigation-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 350px);
+  grid-gap: 20px 30px;
+  list-style: none;
+  padding-left: 0;
+}
+
+.navigation-item {
+  /* min-height: 348px; */
+  display: flex;
+  flex-direction: column;
+}
+
+.navigation-item:not(:nth-child(1)) {
+  padding: 24px;
+}
+
+.navigation-item:not(:nth-child(1)) {
+  background-color: var(--light);
+}
+
+.navigation-title {
+  font-size: 52px;
+  color: var(--white);
+  font-weight: 400;
+  /* margin-bottom: 16px; */
+}
+
+.navigation-subtitle {
+  display: inline-block;
+  line-height: 1;
+  font-size: 64px;
+  margin-bottom: 40px;
+}
+
+.navigation-item > .title-third {
+  margin-bottom: 14px;
 }
