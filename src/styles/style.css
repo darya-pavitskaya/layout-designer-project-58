@@ -84,6 +84,10 @@ main {
   margin-bottom: 40px;
 }
 
+.color-w {
+  color: var(--white);
+}
+
 .title {
   font-family: Neucha, Arial, Helvetica, sans-serif;
   line-height: 1.2em;
@@ -99,10 +103,41 @@ main {
 
 .title-second {
   font-size: 60px;
+  font-weight: 400;
 }
 
 .title-third {
   font-size: 34px;
+}
+
+.subtitle {
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--transparent-dark);
+}
+
+.title-small-bg {
+  padding: 0 10px;
+  margin-bottom: 20px;
+
+  font-size: 13px;
+  font-weight: bold;
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.title-small-bg-brown {
+  background-color: var(--brown);
+  color: var(--white);
+}
+
+.title-small-bg-white {
+  background-color: var(--white);
+  color: var(--brown);
+}
+
+.text-desc {
+  line-height: 1;
 }
 
 .background {
@@ -121,7 +156,7 @@ main {
   background-size: cover;
   width: 100%;
   height: 100%;
-  background-color: var(--light);
+  background-color: var(--brown);
   opacity: 0.1;
 }
 
@@ -143,6 +178,12 @@ main {
   max-height: 434px;
   vertical-align: middle;
   filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+}
+
+.column2-1fr > div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 30px;
 }
 
 /* header */
@@ -217,10 +258,6 @@ main {
   padding: 24px;
 }
 
-/* .navigation-item:not(:nth-child(1)) {
-  padding: 24px;
-} */
-
 .navigation-item:not(:nth-child(1)) {
   background-color: var(--light);
 }
@@ -265,37 +302,29 @@ main {
   column-gap: 30px;
 }
 
-.ikea-subtext {
-  font-size: 24px;
-  font-weight: 400;
-  color: var(--transparent-dark);
-}
-
-.ikea-title {
-  font-weight: 400;
-}
-
-.ikea-text {
-  line-height: 1;
-}
-
-.ikea-descripton-title {
-  padding: 0 10px;
-  margin-bottom: 20px;
-  background-color: var(--brown);
-  font-size: 13px;
-  font-weight: bold;
-  color: var(--white);
-  text-transform: uppercase;
-}
-
-.ikea-descripton > div {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 30px;
-}
-
 .ikea-descripton-text {
   font-size: 16px;
   font-weight: 400;
+}
+
+/* optimization */
+
+.optimization {
+  position: relative;
+  z-index: -1;
+  background-color: var(--brown);
+}
+
+.optimization-wrapper-main {
+  display: grid;
+  grid-template-columns: 1fr 578px;
+  column-gap: 30px;
+}
+
+.optimization-img {
+  order: 1;
+}
+
+.optimization .subtitle {
+  color: var(--transparent-white);
 }
