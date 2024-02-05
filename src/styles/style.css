@@ -15,6 +15,10 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-family: "OpenSans";
   src: url("../fonts/OpenSans-Regular.woff2") format("woff2"),
@@ -190,6 +194,12 @@ main {
   background-color: var(--dark);
 }
 
+.navigation-title {
+  font-size: 52px;
+  color: var(--white);
+  font-weight: 400;
+}
+
 .navigation-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, 350px);
@@ -198,23 +208,25 @@ main {
   padding-left: 0;
 }
 
-.navigation-item {
+.navigation-link {
+  text-decoration: none;
   display: flex;
   flex-direction: column;
-}
-
-.navigation-item:not(:nth-child(1)) {
+  width: 100%;
+  height: 100%;
   padding: 24px;
 }
+
+/* .navigation-item:not(:nth-child(1)) {
+  padding: 24px;
+} */
 
 .navigation-item:not(:nth-child(1)) {
   background-color: var(--light);
 }
 
-.navigation-title {
-  font-size: 52px;
-  color: var(--white);
-  font-weight: 400;
+.navigation-item:not(:nth-child(1)):hover {
+  background-color: var(--basic);
 }
 
 .navigation-subtitle {
@@ -222,10 +234,27 @@ main {
   line-height: 1;
   font-size: 64px;
   margin-bottom: 40px;
+  color: var(--basic-dark);
 }
 
-.navigation-item > .title-third {
+.navigation-link:hover .navigation-subtitle {
+  color: var(--light);
+}
+
+.navigation-link .title-third {
   margin-bottom: 14px;
+}
+
+.navigation-link p {
+  color: var(--dark);
+}
+
+.navigation-link:hover p {
+  color: var(--light);
+}
+
+.navigation-link:hover .title-third {
+  color: var(--light);
 }
 
 /* ikea */
