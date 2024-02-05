@@ -81,7 +81,6 @@ main {
 }
 
 .title {
-  /* color: var(--white); */
   font-family: "Neucha", Arial, Helvetica, sans-serif;
   line-height: 1.2em;
 }
@@ -89,7 +88,6 @@ main {
 .title-main {
   position: relative;
   z-index: 1;
-  /* color: var(--dark); */
   font-weight: 400;
   font-size: 72px;
   padding-bottom: 198px;
@@ -135,6 +133,14 @@ main {
   font-weight: bold;
 }
 
+.img {
+  width: 100%;
+  max-width: 578px;
+  max-height: 434px;
+  vertical-align: middle;
+  filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
+}
+
 /* header */
 
 .header {
@@ -156,7 +162,7 @@ main {
   column-gap: 30px;
 }
 
-/* sections */
+/* desctiption */
 .descripion {
   position: relative;
   margin-bottom: -70px;
@@ -177,6 +183,8 @@ main {
   filter: drop-shadow(0 16px 32px rgba(0 0 0 / 15%));
 }
 
+/* navigation */
+
 .navigation {
   padding-top: 200px;
   background-color: var(--dark);
@@ -191,7 +199,6 @@ main {
 }
 
 .navigation-item {
-  /* min-height: 348px; */
   display: flex;
   flex-direction: column;
 }
@@ -208,7 +215,6 @@ main {
   font-size: 52px;
   color: var(--white);
   font-weight: 400;
-  /* margin-bottom: 16px; */
 }
 
 .navigation-subtitle {
@@ -220,4 +226,47 @@ main {
 
 .navigation-item > .title-third {
   margin-bottom: 14px;
+}
+
+/* ikea */
+
+.ikea-wrapper-main {
+  display: grid;
+  grid-template-columns: 578px 1fr;
+  column-gap: 30px;
+}
+
+.ikea-subtext {
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--transparent-dark);
+}
+
+.ikea-title {
+  font-weight: 400;
+}
+
+.ikea-text {
+  line-height: 1;
+}
+
+.ikea-descripton-title {
+  padding: 0 10px;
+  margin-bottom: 20px;
+  background-color: var(--brown);
+  font-size: 13px;
+  font-weight: bold;
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.ikea-descripton > div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 30px;
+}
+
+.ikea-descripton-text {
+  font-size: 16px;
+  font-weight: 400;
 }
