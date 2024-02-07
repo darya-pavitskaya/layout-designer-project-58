@@ -60,6 +60,10 @@ main {
   margin: 0 auto;
 }
 
+.display-ib {
+  display: inline-block;
+}
+
 .text-orange {
   color: orange;
 }
