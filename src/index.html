@@ -332,27 +332,51 @@
         </div>
       </section>
     </main>
-    <footer>
-      <section class="container">
-        <div>
-          <p>Хотите узнать больше?</p>
-          <p>Подпишитесь на обновления</p>
-        </div>
-        <div>
-          <form action="">
-            <label for="form"></label>
-            <input type="text" id="form" />
-            <button>Подписаться</button>
-          </form>
-          <span>Подписываясь, вы принимаете правила сервиса</span>
+    <footer class="footer">
+      <section class="pt-100">
+        <div class="container footer-subscribe color-w">
+          <div>
+            <h3 class="title title-third">
+              Хотите узнать больше? <br />
+              Подпишитесь на обновления
+            </h3>
+          </div>
+          <div class="form-wrapper">
+            <form class="form" action="">
+              <label class="form-label" for="form">Электронная почта</label>
+              <input
+                class="form-input"
+                type="text"
+                id="form"
+                placeholder="Ваша электронная почта"
+              />
+              <button class="form-btn">
+                <span class="visually-hidden">Подписаться</span>
+              </button>
+            </form>
+            <span class="form-subtext"
+              >Подписываясь, вы принимаете <a href="#">правила сервиса</a></span
+            >
+          </div>
         </div>
       </section>
-      <section class="container">
-        <p>© 2020 Константин Константинопольский</p>
-        <p>
-          По материалам статьи Yash Ranadive Cognitive Biases in Programming
-        </p>
-        <p>Курсы программирования Hexlet</p>
+      <section class="container pb-100">
+        <div class="footer-info">
+          <p>© 2020 Константин Константинопольский</p>
+          <p>
+            По материалам статьи
+            <a
+              class="footer-link"
+              href="https://medium.com/hackernoon/cognitive-biases-in-programming-5e937707c27b"
+              >Yash Ranadive Cognitive Biases in Programming</a
+            >
+          </p>
+          <p>
+            <a class="footer-link" href="https://ru.hexlet.io/"
+              >Курсы программирования Hexlet</a
+            >
+          </p>
+        </div>
       </section>
     </footer>
   </body>

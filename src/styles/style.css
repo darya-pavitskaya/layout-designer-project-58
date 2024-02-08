@@ -8,6 +8,7 @@
   --transparent-dark: #908d8b;
   --brown: #b09a81;
   --blue: #1085c5;
+  --light-blue: #007dc1;
 }
 
 * {
@@ -58,6 +59,19 @@ main {
 .container {
   max-width: 1110px;
   margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .display-ib {
@@ -120,6 +134,7 @@ main {
 
 .title-third {
   font-size: 34px;
+  font-weight: 400;
 }
 
 .subtitle {
@@ -323,4 +338,78 @@ main {
 
 .navigation-link:hover .title-third {
   color: var(--light);
+}
+
+/* footer */
+
+.footer-subscribe {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 60px;
+  padding: 40px 55px;
+  background-color: var(--basic-dark);
+}
+
+.form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.form-input {
+  display: block;
+  padding: 15px;
+  height: 50px;
+}
+
+.form-subtext {
+  font-size: 12px;
+}
+
+.form-subtext a {
+  color: inherit;
+}
+
+.form-btn {
+  position: absolute;
+  top: 41%;
+  right: 0;
+  background-color: var(--basic);
+  width: 70px;
+  height: 50px;
+  border: none;
+}
+
+.form-btn::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 25%;
+  right: 33%;
+  width: 24px;
+  height: 24px;
+  background-image: url("../images/send.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  align-items: center;
+  color: #000000;
+}
+
+.footer-info p {
+  font-size: 14px;
+}
+
+.footer-link {
+  color: var(--light-blue);
 }
