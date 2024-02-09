@@ -3,8 +3,10 @@
   --transparent-white: #d7ccc0;
   --light: #f5f4f0;
   --basic: #fe8a02;
+  --basic-hover: #ea7600;
   --basic-dark: #42413c;
   --dark: #2a2626;
+  --black: #000;
   --transparent-dark: #908d8b;
   --brown: #b09a81;
   --blue: #1085c5;
@@ -184,7 +186,7 @@ main {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url("../images/background.png");
+  background-image: url("../images/background-pattern.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -209,6 +211,10 @@ main {
   text-transform: uppercase;
   text-decoration: none;
   font-weight: bold;
+}
+
+.btn:hover {
+  background-color: var(--basic-hover);
 }
 
 .img {
@@ -406,15 +412,16 @@ main {
   background-size: contain;
 }
 
+.form-btn:hover {
+  background-color: var(--basic-hover);
+}
+
 .footer-info {
   display: flex;
   flex-direction: column;
   row-gap: 13px;
   align-items: center;
-  color: #000000;
-}
-
-.footer-info p {
+  color: var(--black);
   font-size: 14px;
 }
 
