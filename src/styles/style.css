@@ -186,7 +186,7 @@ main {
   position: absolute;
   top: 0;
   left: 0;
-  background-image: url("../images/background-pattern.png");
+  background-image: url("../images/background.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -274,6 +274,10 @@ main {
   margin-bottom: -70px;
 }
 
+.descripion-subtext {
+  font-size: 14px;
+}
+
 .descripion-video {
   position: relative;
   top: 30px;
@@ -285,7 +289,7 @@ main {
 
 .navigation {
   padding-top: 200px;
-  background-color: var(--dark);
+  background-color: var(--basic-dark);
 }
 
 .navigation-title {
