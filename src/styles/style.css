@@ -292,7 +292,8 @@ h2 {
 
 .descripion-subtext {
   margin: 0;
-  font-size: 14px;
+  margin-bottom: 1px;
+  font-size: 16px;
 }
 
 .descripion-video {
