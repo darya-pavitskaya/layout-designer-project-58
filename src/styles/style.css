@@ -108,7 +108,7 @@ h2 {
   position: relative;
   z-index: 1;
   margin: 0;
-  padding-bottom: 180px;
+  padding-bottom: 183px;
   font-weight: 400;
   font-size: 72px;
 }
@@ -275,7 +275,7 @@ h2 {
 .header-img {
   position: absolute;
   top: 55px;
-  right: -106px;
+  right: -105px;
   height: 525px;
 }
 
@@ -283,6 +283,9 @@ h2 {
   grid-template-columns: repeat(2, 540px);
 }
 
+.header-text {
+  line-height: 25px;
+}
 /* desctiption */
 
 .descripion {
@@ -290,9 +293,13 @@ h2 {
   padding-bottom: 505px;
 }
 
+.descripion-title {
+  line-height: 74px;
+}
+
 .descripion-subtext {
   margin: 0;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .iframe-wrapper {
@@ -301,8 +308,8 @@ h2 {
 
 .descripion-video {
   position: absolute;
-  top: 29px;
-  left: 94px;
+  top: 28px;
+  left: 96px;
   border: none;
   width: 100%;
   max-width: 919px;
