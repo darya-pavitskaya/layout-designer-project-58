@@ -272,6 +272,10 @@ h2 {
   height: auto;
 }
 
+.header-background {
+  padding-bottom: 103px;
+}
+
 .header-img {
   position: absolute;
   top: 55px;
@@ -290,11 +294,12 @@ h2 {
 
 .descripion {
   position: relative;
-  padding-bottom: 505px;
+  padding-bottom: 506px;
 }
 
 .descripion-title {
   line-height: 74px;
+  margin-bottom: 26px;
 }
 
 .descripion-subtext {
@@ -308,7 +313,7 @@ h2 {
 
 .descripion-video {
   position: absolute;
-  top: 28px;
+  top: 29px;
   left: 96px;
   border: none;
   width: 100%;
