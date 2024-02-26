@@ -295,12 +295,12 @@ h2 {
 .descripion {
   padding-top: 100px;
   position: relative;
-  padding-bottom: 507px;
+  padding-bottom: 500px;
 }
 
 .descripion-title {
   line-height: 74px;
-  margin-bottom: 24px;
+  margin-bottom: 30px;
 }
 
 .descripion-subtext {
@@ -314,7 +314,7 @@ h2 {
 
 .descripion-video {
   position: absolute;
-  top: 31px;
+  top: 26px;
   left: 96px;
   border: none;
   width: 100%;
