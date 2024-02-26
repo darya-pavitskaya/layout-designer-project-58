@@ -295,7 +295,7 @@ h2 {
 .descripion {
   padding-top: 98px;
   position: relative;
-  padding-bottom: 509px;
+  padding-bottom: 505px;
 }
 
 .descripion-title {
@@ -305,7 +305,7 @@ h2 {
 
 .descripion-subtext {
   margin: 0;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .iframe-wrapper {
@@ -314,7 +314,7 @@ h2 {
 
 .descripion-video {
   position: absolute;
-  top: 31px;
+  top: 33px;
   left: 96px;
   border: none;
   width: 100%;
