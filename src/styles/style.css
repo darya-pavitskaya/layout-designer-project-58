@@ -293,7 +293,7 @@ h2 {
 /* desctiption */
 
 .descripion {
-  padding-top: 98px;
+  padding-top: 100px;
   position: relative;
   padding-bottom: 505px;
 }
@@ -314,7 +314,7 @@ h2 {
 
 .descripion-video {
   position: absolute;
-  top: 33px;
+  top: 36px;
   left: 96px;
   border: none;
   width: 100%;
